@@ -61,12 +61,12 @@ function criarTabelaEmprestimos(emprestimos) {
 
             // Cria e adiciona a célula para o ID do livro
             const tdIdLivro = document.createElement('td');
-            tdIdLivro.textContent = emprestimo.id_livro;
+            tdIdLivro.textContent = emprestimo.idLivro;
             tr.appendChild(tdIdLivro);
 
             // Cria e adiciona a célula para o ID do aluno
             const tdIdAluno = document.createElement('td');
-            tdIdAluno.textContent = emprestimo.id_aluno;
+            tdIdAluno.textContent = emprestimo.idAluno;
             tr.appendChild(tdIdAluno);
 
             // Cria e adiciona a célula para a data de empréstimo
@@ -76,7 +76,7 @@ function criarTabelaEmprestimos(emprestimos) {
 
             // Cria e adiciona a célula para a data de devolução
             const tdDataDevolucao = document.createElement('td');
-            tdDataDevolucao.textContent = new Date(emprestimo.dataDevolução).toLocaleDateString();
+            tdDataDevolucao.textContent = new Date(emprestimo.dataDevolucao).toLocaleDateString();
             tr.appendChild(tdDataDevolucao);
 
             // Cria e adiciona a célula para o status

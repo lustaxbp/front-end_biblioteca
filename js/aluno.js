@@ -62,7 +62,7 @@ function criarTabelaAlunos(alunos) {
 
             // Cria e adiciona a célula para o ID do aluno
             const tdIdAluno = document.createElement('td');
-            tdIdAluno.textContent = aluno.id;
+            tdIdAluno.textContent = aluno.idAluno;
             tr.appendChild(tdIdAluno);
 
             // Cria e adiciona a célula para o nome do aluno

@@ -65,7 +65,7 @@ function criarTabelaLivros(livros) {
 
             // Cria e adiciona a célula para o ID
             const tdId = document.createElement('td');
-            tdId.textContent = livro.id;
+            tdId.textContent = livro.idLivro;
             tr.appendChild(tdId);
 
             // Cria e adiciona a célula para o título
