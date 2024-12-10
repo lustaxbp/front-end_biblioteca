@@ -3,11 +3,11 @@ async function enviaFormulario() {
     const alunoDTO = {
         "nome": document.querySelectorAll("input")[0].value,
         "sobrenome": document.querySelectorAll("input")[1].value,
-        "dataNascimento": document.querySelectorAll("input")[2].value, // Mantém como string
+        "dataNascimento": new Date (document.querySelectorAll("input")[2].value).toISOString().split('T')[0], // Mantém como string
         "endereco": document.querySelectorAll("input")[3].value,
         "email": document.querySelectorAll("input")[4].value,
-        "celular": document.querySelectorAll("input")[5].value,
-    };
+        "celular": document.querySelectorAll("input")[5].value
+    }
 
     try {
         const respostaServidor = await fetch("http://localhost:3333/novo/aluno", {
@@ -25,7 +25,7 @@ async function enviaFormulario() {
         alert("Aluno cadastrado com sucesso!");
     } catch (error) {
         console.error(error);
-        alert(`Erro ao se comunicar com o servidor: ${error.message}`);
+        alert(`Erro ao se comunicar com o servidor: ${error}`);
     }
 }
 

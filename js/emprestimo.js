@@ -1,8 +1,8 @@
 async function enviaEmprestimo() {
     // Recupera os valores do formulário (ajuste os índices para o formulário correspondente)
     const emprestimoDTO = {
-        id_livro: parseInt(document.querySelectorAll("input")[0].value),
-        id_aluno: parseInt(document.querySelectorAll("input")[1].value),
+        id_aluno: parseInt(document.querySelectorAll("input")[0].value),
+        id_livro: parseInt(document.querySelectorAll("input")[1].value),
         dataEmprestimo: document.querySelectorAll("input")[2].value, // Mantém como string no formato ISO
         dataDevolução: document.querySelectorAll("input")[3].value,
         statusEmprestimo: document.querySelectorAll("input")[4].value,
