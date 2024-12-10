@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Empréstimos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+    <link rel="stylesheet" href="css/listagem.css">
+</head>
+<body onload="recuperarListaEmprestimos()">
+    <header>
+        <nav>
+            <a href="index.html" class="btn-inicio">INÍCIO</a>
+            <a href="lista-alunos.html">ALUNOS</a>
+            <a href="lista-livros.html">LIVROS</a>
+            <a href="lista-emprestimos.html">EMPRÉSTIMOS</a>
+        </nav>
+    </header>
+    <div class="painel">
+        <div class="esquerda">
+            <div>
+                <a href="emprestimo.html">NOVO EMPRÉSTIMO</a>
+            </div>
+        </div>
+        <div class="meio">
+            <h1>EMPRÉSTIMOS</h1>
+        </div>
+        <div class="direita"></div>
+    </div>
+    <div class="container-tabela">
+        <table>
+            <thead>
+                <tr>
+                    <td>ID LIVRO</td>
+                    <td>ID ALUNO</td>
+                    <td>DATA EMPRÉSTIMO</td>
+                    <td>DATA DEVOLUÇÃO</td>
+                    <td>STATUS</td>
+                    <td>AÇÕES</td>
+                </tr>
+            </thead>
+            <tbody>
+             
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/emprestimo.js"></script>
+</body>
+</html>

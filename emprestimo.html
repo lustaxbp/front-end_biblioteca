@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Empréstimo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="btn-inicio">INÍCIO</a>
+            <a href="lista-alunos.html">ALUNOS</a>
+            <a href="lista-livros.html">LIVROS</a>
+            <a href="lista-emprestimos.html">EMPRÉSTIMOS</a>
+        </nav>
+    </header>
+    <h1>REGISTRO DE EMPRÉSTIMO DE LIVRO</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label>
+                Número de Matrícula do Aluno
+                <br>
+                <input type="text" name="input-matricula-aluno" placeholder="Informe o número de matrícula" required>
+            </label>
+            <label>
+                ID do Livro
+                <br>
+                <input type="text" name="input-id-livro" placeholder="Informe o ID do livro" required>
+            </label>
+            <label>
+                Data de Início do Empréstimo
+                <br>
+                <input type="date" name="input-data-inicio" required>
+            </label>
+            <label>
+                Data Prevista de Devolução
+                <br>
+                <input type="date" name="input-data-devolucao" placeholder="Informe a data de devolução">
+            </label>
+
+            <input type="button" value="REGISTRAR EMPRÉSTIMO" onclick="enviaEmprestimo()">
+        </form>
+    </div>
+    <script src="js/emprestimo.js"></script>
+</body>
+
+</html>

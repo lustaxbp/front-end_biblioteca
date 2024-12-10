@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="btn-inicio">Início</a>
+            <a href="lista-alunos.html">ALUNOS</a>
+            <a href="lista-livros.html">LIVROS</a>
+            <a href="lista-emprestimo.html">EMPRESTIMO</a>
+        </nav>
+    </header>
+    <h1>CADASTRO DE ALUNO</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label>
+                RA
+                <br>
+                <input type="text" name="input-ra-aluno" placeholder="Informe o RA" required>
+            </label>
+            <label>
+                Nome
+                <br>
+                <input type="text" name="input-nome-aluno" placeholder="Informe o nome" required>
+            </label>
+            <label>
+                Sobrenome
+                <br>
+                <input type="text" name="input-sobrenome-aluno" placeholder="Informe o sobrenome" required>
+            </label>
+            <label>
+                Data de Nascimento
+                <br>
+                <input type="date" name="input-data-nascimento-aluno" required>
+            </label>
+            <label>
+                Endereço
+                <br>
+                <input type="text" name="input-endereco-aluno" placeholder="Informe o endereço">
+            </label>
+            <label>
+                Email
+                <br>
+                <input type="email" name="input-email-aluno" placeholder="Informe o email">
+            </label>
+            <label>
+                Celular
+                <br>
+                <input type="text" name="input-celular-aluno" placeholder="Informe o celular" required>
+            </label>
+
+            <input type="button" value="CADASTRAR" onclick=" enviaFormulario()">
+        </form>
+       
+
+    <script src="js/aluno.js"></script>
+</body>
+
+</html>

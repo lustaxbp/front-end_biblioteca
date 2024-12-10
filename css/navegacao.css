@@ -1,0 +1,23 @@
+/* navegacao.css */
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(48, 25, 52, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav a {
+    color: #c3a6ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #5c1e84;
+    color: #ffffff;
+    border-radius: 8px;
+}

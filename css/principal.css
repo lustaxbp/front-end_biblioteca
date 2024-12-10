@@ -1,0 +1,22 @@
+/* principal.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1c1f57, #311850, #050d20);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("../assets/images/galaxy-background.jpg");
+    background-size: cover;
+}
+
+h1 {
+    color: #d1c4ff;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+}

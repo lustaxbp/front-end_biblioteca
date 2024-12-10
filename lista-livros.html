@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Livros</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+    <link rel="stylesheet" href="css/listagem.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/Ybin.gif" alt="" srcset="" class="livro-abrindo">
+        <nav>
+            <a href="index.html" class="btn-inicio">INÍCIO</a>
+            <a href="lista-alunos.html">ALUNOS</a>
+            <a href="lista-livros.html">LIVROS</a>
+            <a href="lista-emprestimos.html">EMPRÉSTIMOS</a>
+        </nav>
+    </header>
+    <div class="painel">
+        <div class="esquerda">
+            <div>
+                <a href="cadastro-livro.html">NOVO LIVRO</a>
+            </div>
+        </div>
+        <div class="meio">
+            <h1>ACERVO DE LIVROS</h1>
+        </div>
+        <div class="direita"></div>
+    </div>
+    <div class="container-tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TÍTULO</th>
+                    <th>AUTOR</th>
+                    <th>EDITORA</th>
+                    <th>ANO DE PUBLICAÇÃO</th>
+                    <th>ISBN</th>
+                    <th>DISPONÍVEIS</th>
+                    <th>AÇÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/livro.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", recuperarListaLivros);
+    </script>
+</body>
+
+</html>

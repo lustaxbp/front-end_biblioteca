@@ -1,0 +1,112 @@
+/* formulario.css */
+.container-formulario {
+    width: 70%;
+    max-width: 500px;
+    margin: auto;
+    background: rgba(35, 15, 50, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    color: #c3a6ff;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #5c2e7c;
+    background-color: #281842;
+    color: #e3d3ff;
+}
+
+form input[type="button"] {
+    background-color: #5c2e7c;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form input[type="button"]:hover {
+    background-color: #794fb3;
+    transform: scale(1.05);
+}
+
+/* Estilo para o formulário */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a5acd; /* Cor roxa */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #483d8b; /* Cor roxa mais escura ao passar o mouse */
+}
+
+/* Estilo do GIF */
+#loading-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-gif img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Esconder o GIF inicialmente */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,75 @@
+/* home.css */
+.painel-principal {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(40, 20, 60, 0.8);
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.painel-direito, .painel-esquerdo {
+    display: flex;
+    align-items: center;
+}
+
+.painel-direito img {
+    max-width: 60%; 
+    height: auto;
+    margin: 100px;
+    opacity: 0.50; 
+    border-radius: 12px;
+    margin-left: 170px;
+   
+}
+
+.painel-esquerdo img {
+    max-width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+.painel-esquerdo p, .painel-direito p {
+    font-size: 1.2em;
+    color: #e3d3ff;
+    line-height: 1.6;
+    margin: 0; 
+    max-width: 500px; 
+}
+
+.logo{
+   max-width: 50px;
+   height: auto;
+}
+
+
+
+
+
+/* Estilos para o foguete */
+.foguete img {
+    position: absolute;
+    bottom: 0; /* Foguete começa na parte inferior da tela */
+    right: 10%; /* Foguete começa no lado direito */
+    width: 80px; /* Ajuste o tamanho do foguete conforme necessário */
+    animation: voarParaCima 4s linear ; /* Animação do foguete subindo */
+}
+
+/* Animação do foguete subindo de baixo para cima */
+@keyframes voarParaCima {
+    0% {
+        bottom: -10%; /* Foguete começa fora da tela, abaixo */
+    }
+    50% {
+        bottom: 50%; /* Meio do caminho, o foguete está no centro da tela */
+    }
+    100% {
+        bottom: 100%; /* Foguete chega no topo da tela, fora da tela */
+    }
+}
+
+
+

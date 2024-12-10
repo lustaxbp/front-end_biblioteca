@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #2a1a47, #1e1e2f);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header nav a {
+    color: #9a85c5;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header nav a:hover {
+    color: #d8b4f8;
+}
+
+.painel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(50, 38, 89, 0.8);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    color: #d8b4f8;
+}
+
+.painel .meio h1 {
+    font-size: 1.8em;
+    text-shadow: 2px 2px #331a73;
+}
+
+.container-tabela {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #9a85c5;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: rgba(72, 61, 139, 0.8);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgba(72, 61, 139, 0.4);
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(72, 61, 139, 0.6);
+}
+
+tbody tr:hover {
+    background: #d8b4f8;
+    color: #2a1a47;
+}
+
+table img {
+    cursor: pointer;
+    width: 20px;
+    margin: 0 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+table img:hover {
+    transform: scale(1.2);
+}
+
+a {
+    color: #d8b4f8;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000; /* Fundo escuro para combinar com o tema galáxia */
+}
+
+.livro-abrindo{
+    width: 50px;
+}
+.astronauta-container {
+    position: fixed;
+    bottom: 0; /* Fixa o astronauta na parte inferior */
+    right: 10px; /* Posiciona à direita da tela */
+    z-index: 10; /* Garante que o astronauta fique acima de outros elementos */
+}
+
+.astronauta {
+    width: 100px; /* Ajuste o tamanho do astronauta conforme necessário */
+    animation: subirAstronauta 40s linear infinite; /* Animação para subir o astronauta */
+}
+
+@keyframes subirAstronauta {
+    0% {
+        transform: translateY(0); /* Começa no fundo */
+    }
+    50% {
+        transform: translateY(-100px); /* Meio da animação, já subindo */
+    }
+    100% {
+        transform: translateY(0); /* Retorna à posição inicial */
+    }
+}
